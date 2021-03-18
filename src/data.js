@@ -15,7 +15,7 @@ export const data = [
   {
   id:2,
   type:'Experience',
-  heading1:'react development ',
+  heading1:'frontend development-React ',
   desc1:'Learning react and getting better',
   heading2:'web design / development',
   desc2:'expert in front-end developement',

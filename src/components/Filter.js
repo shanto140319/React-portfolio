@@ -5,16 +5,14 @@ const Filter = ({categories,filterItem,value}) => {
   console.log(value);
  return (
   <Wrapper>
-   <h4>Filter By Course</h4>
-   <div className="btn-container">
-      {categories.map((category,index)=>{
+   <h4>Filter By Project</h4>
+   <select name="filter" id="filter" onChange={filterItem}>
+    {categories.map((category)=>{
         return(
-          <button key={index} type="button" className={`btn filter-btn ${index===value && 'active-btn'}`} onClick={()=>filterItem(category,index)}>
-            {category}
-          </button>
+          <option className="option" value={category}>{category}</option>
         )
       })}
-    </div>
+   </select>
   </Wrapper>
  )
 }
@@ -27,17 +25,23 @@ const Wrapper = styled.div `
   flex-direction:column;
   align-items:center;
   margin-bottom:2rem;
-
-.btn-container{
- justify-content:center;
-  align-items:center;
- display:flex;
- flex-wrap:wrap;
-  gap:1rem;
-
-  .filter-btn{
-    color:#222;
+  select{
+    height:2rem;
+    width:10rem;
+    cursor:pointer;
+    text-transform:capitalize;
+    text-align:center;
+    border:2px solid var(--primaryLightColor);
+    letter-spacing:.3rem;
+    font-weight:600;
+    border-radius:.3rem;
+    padding:0 .5rem;
   }
-}
-  
+  select:focus{
+    outline:none;
+  }
+  .option{
+    font-weight:600;
+  }
+ 
 `

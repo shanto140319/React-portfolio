@@ -9,16 +9,16 @@ const ContactMe = () => {
   <Wrapper>
     <div>
      <h4><FaLocationArrow/> Address : </h4>
-    <p>Nabinogir 8, Mohammadpur Housing,<br/> Mohammadpur, Dhaka 1207
+    <p>Nabinogir 8, Mohammadpur, Dhaka 1207
 </p>
     </div>
      <div>
      <h4><FaPhone/> Phone : </h4>
-    <p>01795307435 , </p>
+    <p>01795307435, 01580899662 </p>
     </div>
      <div>
      <h4><AiOutlineMail/> Email : </h4>
-    <p>jahidul-15-9141@diu.edu.bd</p>
+    <p>jahidul-15-9141@diu.edu.bd, shanto140318@gmail.com</p>
     </div>
    
   </Wrapper>
@@ -27,27 +27,28 @@ const ContactMe = () => {
 
 export default ContactMe
  const Wrapper = styled.section `
- width:90%;
+width:95%;
  @media (min-width:890px){
-   width:60%;
+   padding:3rem;
+}
  }
- display:flex;
- flex-direction: column;
- justify-content:center;
  margin: 0 auto;
 background:var(--primaryLightColor);
-padding:3rem 1rem;
-     -webkit-box-shadow: 1px 4px 15px -1px #000000; 
+padding:3rem .8rem;
+-webkit-box-shadow: 1px 4px 15px -1px #000000; 
 box-shadow: 1px 4px 15px -1px #000000;
 div{
- display:flex;
- align-items:center;
- justify-content:space-between;
- color:#fff;
- margin:1rem 0;
- flex-wrap:wrap;
+ margin:2rem 0;
+}
+div h4{
+  margin:.5rem 0;
 }
 div p{
- letter-spacing:.1rem;
+ letter-spacing:.2rem;
+  font-size:.8rem;
+  line-height:2rem;
+   @media (min-width:890px){
+   font-size:1rem;
+}
 }
  `

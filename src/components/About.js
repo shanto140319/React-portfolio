@@ -6,13 +6,12 @@ const About = () => {
  return (
   <section className="about">
    <div className="about-img">
-    <img src="http://trydo.rainbowit.net/assets/images/about/about-8.jpg" alt="my-image"/>
+    <img src="./images/about-8.jpg" alt="my-image"/>
    </div>
    <div className="about-content">
     <div className="about-me">
      <h2>About Me</h2>
-     <p>Hello! I’m Shanto, a software engineer based in Bangladesh,
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences. I love javascript. Currently I am learning React which I love the most .</p>
+     <p>Hello! I’m Jahidul Haque Shanto. I am expert in Frontend Development - React. I have completed my B.sc degree from Daffodil International University in Computer Science and Engineering. I have programming knowledge . My first programming language was 'C'. Now I am working with React which I like so much.</p>
     </div>
     <div className="about-category">
      {data.map((item,index)=>{

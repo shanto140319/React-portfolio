@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {reactbasic,reactAdvance} from '../react'
+import {reactbasic,reactAdvance,reactlarge} from '../react'
 import Projects from '../components/Projects';
 const ReactProjects = () => {
  return (
@@ -20,6 +20,11 @@ const ReactProjects = () => {
      <div className="underline"></div>
         <Projects data={reactAdvance}/>
     </div>
+    <div className="large-projects">
+     <h2>Large Scale Projects</h2>
+     <div className="underline"></div>
+        <Projects data={reactlarge}/>
+    </div>
     
    </main>
   </Wrapper>
@@ -34,6 +39,9 @@ const Wrapper = styled.div `
   text-align:center;
   text-transform:capitalize;
   font-size:2.5rem;
+  @media(max-width:480px){
+    font-size:1.5rem;
+  }
  }
  .projects{
   display:grid;

@@ -43,6 +43,7 @@ const Resume = () => {
          <li><h5><BsDash/>  useFetch   </h5></li> 
          </ul>
       </li>
+      <li><h4> <BsCircleFill/>Styled components</h4></li>
      </ul>
     </div>
     <div className="resume">
@@ -66,6 +67,9 @@ export default Resume
   margin:0;
   padding:0;
   text-transform:capitalize;
+  @media(max-width:480px){
+    font-size:1rem;
+  }
  }
  .content{
   display:flex;
@@ -94,5 +98,7 @@ export default Resume
     border:none;
     cursor:pointer;
     font-size:20px;
+    background:transparent;
+    
  }
  `

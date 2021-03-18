@@ -92,18 +92,6 @@ margin-bottom:3rem;
    margin:1rem 0;
   }
  }
- .form::after{
-   @media (min-width:890px){
-    content:'';
-    background:var(--primaryLightColor);
-    height:300px;
-    width:2px;
-    position:absolute;
-    top:64%;
-    left:50%;
-    transform:translate(-50% ,-50%);
 
-  }
- }
 
 `

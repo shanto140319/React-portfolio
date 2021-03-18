@@ -9,17 +9,14 @@ const ProjectPage = () => {
  const allCategories = ['all', ...new Set(allprojects.map((item)=>item.category))];
   const [project,setProject] = useState(allprojects)
   const [categories,setCategories] = useState(allCategories)
-  const[value,setValue] = useState(0);
-  const filterItem =(c,i)=>{
-    console.log(c)
-      if(c==='all'){
+  const filterItem =(e)=>{
+     const value = e.target.value;
+      if(value==='all'){
           setProject(allprojects)
-          setValue(0);
       }
       else{
-          let newPeojects = allprojects.filter((item)=>item.category === c)
+          let newPeojects = allprojects.filter((item)=>item.category === value)
           setProject(newPeojects)
-          setValue(i);
       }
   }
  return (
@@ -27,7 +24,7 @@ const ProjectPage = () => {
     <div className="upper">
       <h2>projects</h2>
       <div className="underline"></div>
-      <Filter categories={categories} filterItem={filterItem} value={value}/>
+      <Filter categories={categories} filterItem={filterItem}/>
     </div>
     <div className="react">
       <Link to ="/projects/react" ><button className='btn react-btn'>go to react projects</button></Link>

@@ -11,7 +11,7 @@ const Home = () => {
     <div className='hero-content'>
      <p>WELCOME TO MY WORLD</p>
      <h1>Hi, I’m Jahidul haque shanto</h1>
-     <h2><span>frontend developer - react</span></h2>
+     <h2 className='span'>frontend developer - react</h2>
      <h2>Based in bangladesh</h2>
     </div>
    </section>

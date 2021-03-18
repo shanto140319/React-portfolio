@@ -25,7 +25,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 border-radius:5px;
-
  .img-container{
  background: var(--primaryLightColor);
   height:280px;
@@ -41,8 +40,8 @@ border-radius:5px;
   }
 }
  .img-container img{
-  max-height:90%;
-  max-width:90%;
+  max-height:100%;
+  max-width:100%;
   margin: 0 auto;
   border-radius:5px;
   object-fit:cover;
@@ -62,8 +61,8 @@ border-radius:5px;
 transition:.3s ease;
  }
  a:hover{
-  -webkit-box-shadow: 1px 4px 15px -1px #000000; 
-box-shadow: 1px 4px 15px -1px #000000;
- transform: scale(1.01);
+-webkit-box-shadow: -1px 14px 21px 0px rgba(0,0,0,0.23); 
+box-shadow: -1px 14px 21px 0px rgba(0,0,0,0.23);
+ transform: scale(1.04);
  }
 `

@@ -110,3 +110,13 @@ export const reactAdvance = [
     link:'https://unsplash-clone-in.netlify.app',
  },
 ]
+
+ export const reactlarge = [
+ {
+    id: 1,
+    title: 'Ecommerce website',
+    category: '',
+    img: '../images/comfy.PNG',
+    link:'https://ecommerce-comfy.netlify.app/',
+ },
+]
