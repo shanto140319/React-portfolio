@@ -18,6 +18,7 @@ const Resume = () => {
   <Wrapper>
    <div className="heading">
     <h2>Welcome To Resume Page</h2>
+    <div className="underline"></div>
    </div>
    <section className="content">
     <div className="info">
@@ -56,16 +57,12 @@ const Resume = () => {
 
 export default Resume
  const Wrapper = styled.div `
-  .heading{
-  border:2px solid var(--primaryLightColor);
-  padding:2rem 0;
- margin:2rem auto;
- text-align:center;
- max-width:500px;
- }
+ padding: 3rem auto;
+ background:#d4d3cb;
+
  .heading h2{
-  margin:0;
-  padding:0;
+    padding-top:3rem;
+  text-align:center;
   text-transform:capitalize;
   @media(max-width:480px){
     font-size:1rem;
