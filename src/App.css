@@ -383,11 +383,10 @@ button:focus {
   }
   .nav-links li {
     margin-top: 2rem;
-    padding-left: 3.5rem;
+    padding-left: 1rem;
   }
   .nav-links li:first-child {
     margin-top: 0;
-    padding-left: 0.5rem;
   }
   .show {
     transform: translateX(-33.5%);

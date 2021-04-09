@@ -25,7 +25,7 @@ const Wrapper = styled.section`
   ${'' /* border: 1px solid #ddd; */}
   -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.56);
   box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.56);
-  @media (max-width: 320px) {
+  @media (max-width: 420px) {
     width: 280px;
     height: 280px;
   }
@@ -35,7 +35,7 @@ const Wrapper = styled.section`
     justify-content: center;
     width: 100%;
     height: 280px;
-    @media (max-width: 320px) {
+    @media (max-width: 420px) {
       height: 210px;
     }
   }
