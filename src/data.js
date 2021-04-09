@@ -34,11 +34,12 @@ export const data = [
 export const allprojects = [
   {
     id: 1,
-    title: 'Covid 19 Live',
+    title: 'E - Product Page',
     category: 'react',
-    img: './images/covid.PNG',
-    link: 'https://covid-tracker-live.netlify.app/',
+    img: './images/product.PNG',
+    link: 'https://zaynax-ltd-test.netlify.app/',
   },
+
   {
     id: 2,
     title: 'Image Card',
@@ -145,5 +146,12 @@ export const allprojects = [
     category: 'react',
     img: './images/pagination.PNG',
     link: 'https://react-paginations.netlify.app/',
+  },
+  {
+    id: 17,
+    title: 'Covid 19 Live',
+    category: 'react',
+    img: './images/covid.PNG',
+    link: 'https://covid-tracker-live.netlify.app/',
   },
 ]

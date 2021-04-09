@@ -118,8 +118,16 @@ export const reactlarge = [
     img: '../images/covid.PNG',
     link: 'https://covid-tracker-live.netlify.app/',
   },
+
   {
     id: 2,
+    title: 'E - Product Page',
+    category: '',
+    img: '../images/product.PNG',
+    link: 'https://zaynax-ltd-test.netlify.app/',
+  },
+  {
+    id: 3,
     title: 'Ecommerce website',
     category: '',
     img: '../images/comfy.PNG',
