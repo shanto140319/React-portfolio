@@ -141,7 +141,7 @@ const Resume = () => {
 export default Resume
 const Wrapper = styled.div`
   padding: 3rem auto;
-  background: #d4d3cb;
+  background: var(--mainBackground);
 
   .heading h2 {
     padding-top: 3rem;

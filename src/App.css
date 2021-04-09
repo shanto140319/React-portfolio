@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 :root {
-  --primaryLightColor: #1cba70;
+  --primaryLightColor: #02c865;
   --primaryColor: #02f96a;
   --primaryDarkColor: #c02c03;
   --mainWhite: #fff;
@@ -139,6 +139,7 @@ button:focus {
   background-color: var(--primaryLightColor);
   padding: 0 1rem;
   height: 70px;
+  z-index: 1999;
 }
 
 .bars {
@@ -199,17 +200,34 @@ button:focus {
 /* Hero */
 
 .hero {
-  background-color: var(--primaryLightColor);
+  background-image: url('/src/images/bg.jpg');
+
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 2rem;
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
 }
 .hero-img {
   height: 350px;
   width: 350px;
+  z-index: 2;
 }
 .hero-img img {
   height: 100%;
@@ -222,6 +240,7 @@ button:focus {
   margin-left: -7rem;
   text-transform: uppercase;
   color: var(--mainWhite);
+  z-index: 2;
 }
 .hero-content p {
   letter-spacing: 0.5rem;
@@ -231,7 +250,7 @@ button:focus {
   font-size: 2rem;
 }
 .span {
-  color: #ffee08;
+  color: var(--primaryColor);
   font-weight: 900;
   -webkit-animation: heartbeat 1.5s infinite;
   animation: heartbeat 1.5s infinite;
@@ -339,6 +358,9 @@ button:focus {
 /* Responsive */
 @media screen and (max-width: 1024.98px) {
   /* navbar style  */
+  .about-img {
+    display: none;
+  }
 
   .bars {
     display: block;
@@ -346,7 +368,9 @@ button:focus {
     top: 1.2rem;
   }
   .nav-links {
+    z-index: 99999;
     position: absolute;
+    width: 15rem;
     top: 0;
     left: 1rem;
     flex-direction: column;
@@ -359,12 +383,14 @@ button:focus {
   }
   .nav-links li {
     margin-top: 2rem;
+    padding-left: 3.5rem;
   }
   .nav-links li:first-child {
     margin-top: 0;
+    padding-left: 0.5rem;
   }
   .show {
-    transform: translateX(-56%);
+    transform: translateX(-33.5%);
   }
   .social-links {
     margin-left: -3rem;
@@ -410,10 +436,6 @@ button:focus {
 /* // Extra small devices (portrait phones, less than 576px) */
 
 @media screen and (max-width: 480.98px) {
-  .about-img {
-    height: 60vh;
-    width: 300px;
-  }
   .about-me p {
     letter-spacing: 0.4px;
     line-height: 29px;
