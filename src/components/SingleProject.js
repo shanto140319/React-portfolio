@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
 const SingleProject = ({ title, category, link, img }) => {
   return (
@@ -9,15 +9,15 @@ const SingleProject = ({ title, category, link, img }) => {
           <img src={img} alt={title} />
         </div>
         <div className='desc'>
-          <h4>{category}</h4>
+          {category && <h5>{category}</h5>}
           <h4>{title}</h4>
         </div>
       </a>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default SingleProject
+export default SingleProject;
 
 const Wrapper = styled.section`
   width: 350px;
@@ -61,8 +61,19 @@ const Wrapper = styled.section`
     text-align: center;
     margin: 0;
   }
+  .desc h5 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    background-color: #dae2ec;
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 400;
+  }
   transition: var(--mainTransition);
   :hover {
     transform: scale(1.05);
   }
-`
+`;

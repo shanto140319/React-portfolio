@@ -42,7 +42,7 @@ export const reactbasic = [
     img: '../images/sports.PNG',
     link: 'https://sport-mania.netlify.app',
   },
-]
+];
 
 export const reactAdvance = [
   {
@@ -108,13 +108,20 @@ export const reactAdvance = [
     img: '../images/unsplash.PNG',
     link: 'https://unsplash-clone-in.netlify.app',
   },
-]
+  {
+    id: 10,
+    title: 'From with modal',
+    category: '',
+    img: '../images/modal.PNG',
+    link: 'https://grid-stacks.netlify.app/',
+  },
+];
 
 export const reactlarge = [
   {
     id: 1,
     title: 'Covid 19 Live',
-    category: '',
+    category: 'Context, Api',
     img: '../images/covid.PNG',
     link: 'https://covid-tracker-live.netlify.app/',
   },
@@ -122,15 +129,22 @@ export const reactlarge = [
   {
     id: 2,
     title: 'E - Product Page',
-    category: '',
+    category: 'context, redux',
     img: '../images/product.PNG',
     link: 'https://zaynax-ltd-test.netlify.app/',
   },
   {
     id: 3,
+    title: 'Search github user',
+    category: 'AUTH0,context, FUSION-CHARTS',
+    img: '../images/github user.PNG',
+    link: 'https://search-github-users-project.netlify.app/',
+  },
+  {
+    id: 4,
     title: 'Ecommerce website',
-    category: '',
+    category: 'AUTH0, context, redux',
     img: '../images/comfy.PNG',
     link: 'https://ecommerce-comfy.netlify.app/',
   },
-]
+];
